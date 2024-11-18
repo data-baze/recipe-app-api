@@ -1,7 +1,12 @@
 ===
-name: Checks
+name: CI Checks
 
-on: [push]
+push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   test-lint:
